@@ -12,6 +12,8 @@ import time
 from pathlib import Path
 from typing import Callable
 
+__version__ = "0.2.0"
+
 
 # ── Command registry ──────────────────────────────────────────────────────────
 
