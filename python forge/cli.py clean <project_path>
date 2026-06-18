@@ -1,2 +1,0 @@
-
-Note that the build system is auto-detected for `cargo`, `python`, `npm`, `make`, and `cmake`.
