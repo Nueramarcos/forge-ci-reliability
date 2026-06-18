@@ -1,0 +1,2 @@
+
+**Note:** The `build` command auto-detects the build system (cargo, python, npm, make, cmake) based on the project files.
