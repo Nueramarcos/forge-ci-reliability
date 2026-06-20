@@ -1,4 +1,9 @@
 # forge-ci-reliability
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![CI Status](https://img.shields.io/badge/CI-Pending-blue.svg)](https://github.com/Nueramarcos/forge-ci-reliability/actions)
+
 Build reliability tooling: flaky test hunter, log parser, race condition detector. Isolates non-deterministic CI failures from chaotic build logs
 
 ## Usage
