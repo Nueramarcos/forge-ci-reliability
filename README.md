@@ -10,6 +10,29 @@ Build reliability tooling: flaky test hunter, log parser, race condition detecto
 
 #### Build a project
 
+```bash
+python forge/cli.py build /path/to/rust/project
+```
+
+#### Build in release mode
+
+```bash
+python forge/cli.py build /path/to/project --release
+```
+
+#### Run a Python script
+
+```bash
+python forge/cli.py run script.py
+```
+
+#### Clean build artifacts
+
+```bash
+python forge/cli.py clean /path/to/project
+python forge/cli.py clean . --all
+```
+
 ## Usage Examples
 
 ### Build a Rust project
