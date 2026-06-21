@@ -60,7 +60,7 @@ forge run script.py
 forge run /path/to/binary -- arg1 arg2
 ```
 
-### Clean build artefacts
+### Clean build artifacts
 ```bash
 forge clean /path/to/project
 ```

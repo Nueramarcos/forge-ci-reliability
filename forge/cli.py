@@ -218,7 +218,7 @@ def cmd_clean(args: argparse.Namespace) -> int:
                 print(f"  removed {d}")
         return 0
 
-    # Generic: remove common artefact dirs
+    # Generic: remove common artifact dirs
     dirs = ["dist", "build", "__pycache__", ".pytest_cache", "target"]
     if args.all:
         dirs += [".mypy_cache", ".ruff_cache", "node_modules"]
@@ -232,7 +232,7 @@ def cmd_clean(args: argparse.Namespace) -> int:
             print(f"  removed {p}")
             removed += 1
 
-    print(f"  cleaned {removed} artefact(s)")
+    print(f"  cleaned {removed} artifact(s)")
     return 0
 
 
@@ -273,7 +273,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_run.add_argument("args", nargs=argparse.REMAINDER)
 
     # clean
-    p_clean = sub.add_parser("clean", help="remove build artefacts")
+    p_clean = sub.add_parser("clean", help="remove build artifacts")
     p_clean.add_argument("target", nargs="?", default=".")
     p_clean.add_argument("--all", action="store_true")
 
