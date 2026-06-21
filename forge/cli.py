@@ -141,6 +141,10 @@ def _tool_available(tool: str) -> bool:
 
 @command("build")
 def cmd_build(args: argparse.Namespace) -> int:
+    if args.version:
+        print(__version__)
+        return 0
+
     target = Path(args.target).resolve()
 
     if not target.exists():
@@ -248,7 +252,7 @@ def build_parser() -> argparse.ArgumentParser:
             Auto-detects: cargo · python · npm · make · cmake
         """),
     )
-    parser.add_argument("--version", action="version", version="%(prog)s 0.2.0")
+    parser.add_argument("--version", action="store_true")
     parser.add_argument("-v", "--verbose", action="store_true")
 
     sub = parser.add_subparsers(dest="command", metavar="COMMAND")
