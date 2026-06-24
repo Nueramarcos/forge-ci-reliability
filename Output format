@@ -1,4 +1,0 @@
-FILES_CHANGED: forge/py.typed
-TESTS: pass
-BLOCKERS: none
-CONFIDENCE: low
