@@ -12,59 +12,26 @@ Build reliability tooling: flaky test hunter, log parser, race condition detecto
 - Python 3.10+ (no installation required, run from the repository root)
 
 ### Examples
-
 #### Build a project
-
 ```bash
 python forge/cli.py build /path/to/rust/project
 ```
-
 #### Build in release mode
-
 ```bash
 python forge/cli.py build /path/to/project --release
 ```
-
 #### Run a Python script
-
 ```bash
 python forge/cli.py run script.py
 ```
-
-#### Clean build artifacts
-
-```bash
-python forge/cli.py clean /path/to/project
-python forge/cli.py clean . --all
-```
-
-## Usage Examples
-
-### Build a Rust project
-```bash
-forge build /path/to/rust/project
-```
-
-### Build in release mode
-```bash
-forge build /path/to/project --release
-```
-
-### Run a Python script
-```bash
-forge run script.py
-```
-
-### Run a compiled binary
+#### Run a compiled binary
 ```bash
 forge run /path/to/binary -- arg1 arg2
 ```
-
-### Clean build artefacts
+#### Clean build artifacts
 ```bash
 forge clean /path/to/project
 ```
-
 ### Clean including cache directories
 ```bash
 forge clean /path/to/project --all
